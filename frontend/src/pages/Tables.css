@@ -1,0 +1,87 @@
+.tables-page {
+  max-width: 1400px;
+}
+
+.stat-box {
+  background: var(--bg-secondary);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  border-left: 4px solid;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.stat-value {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.table-floor {
+  position: relative;
+  min-height: 600px;
+  background: var(--bg-tertiary);
+  border-radius: var(--radius);
+  padding: 20px;
+}
+
+.table-item {
+  position: absolute;
+  width: 120px;
+  padding: 16px;
+  background: var(--bg-secondary);
+  border-radius: var(--radius);
+  border: 2px solid;
+  text-align: center;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.table-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px var(--shadow-lg);
+}
+
+.table-available { border-color: var(--success); }
+.table-occupied { border-color: var(--danger); }
+.table-reserved { border-color: var(--warning); }
+.table-billing { border-color: var(--info); }
+
+.table-number {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.table-capacity {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+}
+
+.table-status {
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-top: 8px;
+}
+
+.table-available .table-status {
+  background: rgba(16, 185, 129, 0.15);
+  color: var(--success);
+}
+
+.table-occupied .table-status {
+  background: rgba(239, 68, 68, 0.15);
+  color: var(--danger);
+}

@@ -1,0 +1,16 @@
+.reports-page { max-width: 1200px; }
+
+.report-card {
+  text-align: center;
+  transition: var(--transition);
+}
+
+.report-card h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 16px 0 8px;
+}
+
+.report-icon {
+  margin-bottom: 12px;
+}
